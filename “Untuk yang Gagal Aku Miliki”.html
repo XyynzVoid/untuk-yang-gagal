@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Untuk yang Gagal Aku Miliki</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Segoe UI',sans-serif;
+    }
+
+    body{
+      background: linear-gradient(180deg,#050505,#0f0f0f,#111);
+      color:white;
+      overflow-x:hidden;
+    }
+
+    .bg{
+      position:fixed;
+      width:100%;
+      height:100%;
+      overflow:hidden;
+      z-index:-1;
+    }
+
+    .circle{
+      position:absolute;
+      border-radius:50%;
+      background:rgba(255,255,255,0.05);
+      animation:float 12s infinite linear;
+    }
+
+    .circle:nth-child(1){
+      width:200px;
+      height:200px;
+      left:10%;
+      top:80%;
+      animation-duration:18s;
+    }
+
+    .circle:nth-child(2){
+      width:300px;
+      height:300px;
+      left:70%;
+      top:90%;
+      animation-duration:25s;
+    }
+
+    .circle:nth-child(3){
+      width:150px;
+      height:150px;
+      left:40%;
+      top:100%;
+      animation-duration:15s;
+    }
+
+    @keyframes float{
+      from{
+        transform:translateY(0px);
+      }
+      to{
+        transform:translateY(-130vh);
+      }
+    }
+
+    .container{
+      width:90%;
+      max-width:900px;
+      margin:auto;
+      padding:80px 20px;
+    }
+
+    h1{
+      font-size:3rem;
+      text-align:center;
+      margin-bottom:20px;
+      animation:fadeDown 2s ease;
+      color:#ffffff;
+      text-shadow:0 0 15px rgba(255,255,255,0.2);
+    }
+
+    .subtitle{
+      text-align:center;
+      color:#999;
+      margin-bottom:60px;
+      animation:fade 3s ease;
+    }
+
+    .text-box{
+      background:rgba(255,255,255,0.03);
+      border:1px solid rgba(255,255,255,0.08);
+      padding:35px;
+      border-radius:20px;
+      backdrop-filter:blur(8px);
+      animation:fadeUp 2s ease;
+      line-height:2;
+      font-size:1.1rem;
+      box-shadow:0 0 30px rgba(255,255,255,0.05);
+    }
+
+    .text-box p{
+      margin-bottom:25px;
+      opacity:0;
+      transform:translateY(20px);
+      animation:appear 1s forwards;
+    }
+
+    .text-box p:nth-child(1){ animation-delay:1s; }
+    .text-box p:nth-child(2){ animation-delay:2s; }
+    .text-box p:nth-child(3){ animation-delay:3s; }
+    .text-box p:nth-child(4){ animation-delay:4s; }
+    .text-box p:nth-child(5){ animation-delay:5s; }
+    .text-box p:nth-child(6){ animation-delay:6s; }
+
+    @keyframes appear{
+      to{
+        opacity:1;
+        transform:translateY(0);
+      }
+    }
+
+    @keyframes fadeDown{
+      from{
+        opacity:0;
+        transform:translateY(-40px);
+      }
+      to{
+        opacity:1;
+        transform:translateY(0);
+      }
+    }
+
+    @keyframes fadeUp{
+      from{
+        opacity:0;
+        transform:translateY(40px);
+      }
+      to{
+        opacity:1;
+        transform:translateY(0);
+      }
+    }
+
+    @keyframes fade{
+      from{
+        opacity:0;
+      }
+      to{
+        opacity:1;
+      }
+    }
+
+    .quote{
+      margin-top:60px;
+      text-align:center;
+      font-size:1.4rem;
+      color:#d1d1d1;
+      opacity:0;
+      animation:appear 2s forwards;
+      animation-delay:7s;
+      font-style:italic;
+    }
+
+    .heart{
+      color:red;
+      animation:beat 1.5s infinite;
+      display:inline-block;
+    }
+
+    @keyframes beat{
+      0%{
+        transform:scale(1);
+      }
+      50%{
+        transform:scale(1.2);
+      }
+      100%{
+        transform:scale(1);
+      }
+    }
+
+    footer{
+      text-align:center;
+      margin-top:80px;
+      color:#666;
+      padding-bottom:40px;
+      font-size:0.9rem;
+    }
+
+    ::-webkit-scrollbar{
+      width:8px;
+    }
+
+    ::-webkit-scrollbar-thumb{
+      background:#444;
+      border-radius:10px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="bg">
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+  </div>
+
+  <div class="container">
+
+    <h1>Untuk yang Gagal Aku Miliki</h1>
+
+    <div class="subtitle">
+      Sebuah penyesalan yang tumbuh bersama perubahan.
+    </div>
+
+    <div class="text-box">
+
+      <p>
+        Aku pernah menjadi seseorang yang terlalu yakin bahwa kamu akan tetap tinggal,
+        bahkan saat aku sendiri belum menjadi seseorang yang pantas untuk dipertahankan.
+        Aku terlalu sibuk dengan ego, terlalu santai dengan perhatian,
+        dan terlalu bodoh untuk sadar bahwa seseorang bisa lelah menunggu perubahan.
+      </p>
+
+      <p>
+        Lucunya, aku baru belajar menghargai setelah kehilangan.
+        Baru memahami arti hadir setelah ditinggalkan.
+        Dan sekarang, setiap malam terasa seperti hukuman panjang
+        karena mengingat semua hal kecil yang dulu kuanggap biasa,
+        padahal mungkin itu adalah bentuk cinta paling tulus yang pernah datang.
+      </p>
+
+      <p>
+        Aku mencoba berubah.
+        Bukan supaya kamu kembali,
+        tapi karena aku sadar versi diriku yang dulu
+        bahkan tidak bisa membahagiakan dirinya sendiri,
+        apalagi orang yang dia cintai.
+      </p>
+
+      <p>
+        Sekarang aku belajar mendengarkan.
+        Belajar menghargai waktu.
+        Belajar bahwa cinta bukan hanya soal memiliki,
+        tapi soal menjaga.
+        Dan ironisnya,
+        semua pelajaran itu datang dari seseorang yang gagal aku jaga.
+      </p>
+
+      <p>
+        Ada rasa bersalah yang tidak bisa hilang meski waktu terus berjalan.
+        Rasanya seperti membawa hujan di dalam dada.
+        Setiap melihat orang lain bahagia,
+        aku ikut tersenyum...
+        lalu diam-diam bertanya,
+        “Seandainya dulu aku lebih dewasa,
+        apakah semuanya akan berbeda?”
+      </p>
+
+      <p>
+        Tapi mungkin memang begini hidup bekerja.
+        Tidak semua orang hadir untuk dimiliki.
+        Ada yang datang hanya untuk mengubah kita,
+        menghancurkan sifat buruk kita,
+        lalu pergi sebelum sempat melihat hasil akhirnya.
+      </p>
+
+    </div>
+
+    <div class="quote">
+      “Aku kehilanganmu... <span class="heart">❤</span><br>
+      dan sejak saat itu, aku mulai belajar menjadi manusia yang lebih baik.”
+    </div>
+
+    <footer>
+      dibuat dari rasa yang tidak pernah selesai.
+    </footer>
+
+  </div>
+
+</body>
+</html>
